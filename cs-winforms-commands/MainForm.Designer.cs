@@ -30,6 +30,7 @@
         {
             this.mainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.canShowProductsCheckBox = new System.Windows.Forms.CheckBox();
+            this.canShowSubjectsCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // mainFormMenuStrip
@@ -52,11 +53,23 @@
             this.canShowProductsCheckBox.UseVisualStyleBackColor = true;
             this.canShowProductsCheckBox.CheckedChanged += new System.EventHandler(this.canShowProductsCheckBox_CheckedChanged);
             // 
+            // canShowSubjectsCheckBox
+            // 
+            this.canShowSubjectsCheckBox.AutoSize = true;
+            this.canShowSubjectsCheckBox.Location = new System.Drawing.Point(332, 226);
+            this.canShowSubjectsCheckBox.Name = "canShowSubjectsCheckBox";
+            this.canShowSubjectsCheckBox.Size = new System.Drawing.Size(188, 29);
+            this.canShowSubjectsCheckBox.TabIndex = 3;
+            this.canShowSubjectsCheckBox.Text = "Can Show Subjects";
+            this.canShowSubjectsCheckBox.UseVisualStyleBackColor = true;
+            this.canShowSubjectsCheckBox.CheckedChanged += new System.EventHandler(this.canShowSubjectsCheckBox_CheckedChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.canShowSubjectsCheckBox);
             this.Controls.Add(this.canShowProductsCheckBox);
             this.Controls.Add(this.mainFormMenuStrip);
             this.MainMenuStrip = this.mainFormMenuStrip;
@@ -70,5 +83,6 @@
         #endregion
         private MenuStrip mainFormMenuStrip;
         private CheckBox canShowProductsCheckBox;
+        private CheckBox canShowSubjectsCheckBox;
     }
 }

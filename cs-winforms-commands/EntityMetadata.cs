@@ -2,7 +2,7 @@
 {
     internal class EntityMetadata : IHavePermits
     {
-        bool _isShowAvailable = false;
+        bool _isShowAvailable;
 
         public EntityMetadata(string dataDomainName)
         {
@@ -30,7 +30,6 @@
                     return;
 
                 _isShowAvailable = value;
-
                 OnEntityPermitChanged(new EntityPermitChangedEventArgs(this));
             }
         }
